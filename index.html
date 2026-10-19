@@ -608,6 +608,9 @@
                                         <span class="text-[10px] uppercase tracking-widest text-stone-300 font-cinzel">Ara de Piedra Natural (Mensa)</span>
                                         <button onclick="toggleAltarCross(1)" id="altar-cross-1" title="Cruz Angular Noreste" class="w-9 h-9 rounded-lg bg-stone-800/80 border border-stone-500 flex items-center justify-center text-stone-400 transition">
                                             <i class="ph-bold ph-cross text-lg"></i>
+                                        </button>
+                                    </div>
+
                                     <!-- Center Cross & Brazier / Corporal -->
                                     <div class="flex items-center justify-center gap-4 relative z-10">
                                         <button onclick="toggleAltarCross(2)" id="altar-cross-2" title="Cruz Central del Ara" class="w-12 h-12 rounded-xl bg-stone-800/90 border border-stone-400 flex items-center justify-center text-stone-300 transition shadow-md">
@@ -880,6 +883,82 @@
                         rubric: '«La celebración de la Eucaristía es la parte principal y más antigua de todo el rito, pues la dedicación de la iglesia se realiza ante todo con el sacrificio eucarístico.»',
                         prayer: '«En esta casa que tú nos has permitido edificar, y en la que muestras a tu Iglesia como esposa de Cristo, habita siempre con nosotros, Señor.»',
                         elementsUsed: ['Cáliz, Patena y Píxide', 'Sagrario (Tabernáculo) y Lámpara Perpetua']
+                    }
+                ]
+            },
+            altar: {
+                id: 'altar',
+                title: 'Ritual de la Dedicación de un Altar',
+                latinTitle: 'Ordo Dedicationis Altaris (Capítulos IV y V)',
+                summary: 'Rito pontifical mediante el cual se consagra a Dios un nuevo altar fijo de piedra natural dentro de una iglesia ya dedicada. El altar cristiano es por su propia naturaleza la mesa del sacrificio y del banquete pascual: memorial de la Pascua de Cristo y centro de la acción de gracias eucarística.',
+                colorBadge: 'Ornamentos Blancos o Festivos',
+                minister: 'Obispo Diocesano (o un Obispo delegado)',
+                steps: [
+                    {
+                        num: 'I',
+                        part: '1. Ritos Iniciales',
+                        title: 'Procesión de Entrada y Bendición del Agua para Rociar el Altar',
+                        image: 'https://images.pexels.com/photos/38116271/pexels-photo-38116271.jpeg?auto=compress&cs=tinysrgb&w=1000',
+                        imageCaption: 'Presbiterio y altar de piedra dispuesto para la dedicación (Foto: Pexels)',
+                        description: 'El nuevo altar permanece completamente desnudo (sin mantel, ni cruz, ni candeleros sobre él). El Obispo entra en procesión con los concelebrantes y diáconos. Tras el saludo litúrgico, bendice el agua y rocía con ella al pueblo fiel en recuerdo de su Bautismo y rocía la mesa de piedra del nuevo altar para purificarlo y consagrarlo.',
+                        rubric: '«El altar que se va a dedicar debe estar completamente desnudo. El Obispo bendice el agua y rocía con ella al pueblo y el altar.» (Cap. IV, n. 18-23)',
+                        prayer: '«Señor Dios, que das la salvación a los hombres por medio del misterio del agua, santifica esta agua y este altar que hoy te consagramos.»',
+                        elementsUsed: ['Acetres de Agua Bendita e Hisopos', 'Mesa de Piedra Natural con las 5 Cruces (Mensa)']
+                    },
+                    {
+                        num: 'II',
+                        part: '2. Liturgia de la Palabra',
+                        title: 'Proclamación de las Lecturas Bíblicas, Homilía y Profesión de Fe',
+                        image: 'https://images.pexels.com/photos/8674147/pexels-photo-8674147.jpeg?auto=compress&cs=tinysrgb&w=1000',
+                        imageCaption: 'Lectura solemne de las Sagradas Escrituras en el presbiterio (Foto: Pexels)',
+                        description: 'Se canta el himno «Gloria a Dios en el cielo» y el Obispo pronuncia la oración colecta. Luego se proclaman tres lecturas tomadas del Leccionario propio de la Dedicación de un Altar (por ejemplo, Josué 8,30-35 o Apocalipsis 8,3-4; Hebreos 13,9-15; y el Evangelio de Juan 4 o Mateo 5,23-24). El Obispo explica en la homilía que Cristo es el verdadero Altar, Sacerdote y Víctima. Se dice el Credo y se omite la oración universal.',
+                        rubric: '«Terminada la homilía, se dice el Símbolo (Credo). Se omite la oración universal, ya que en su lugar se cantan las Letanías de los Santos.» (Cap. IV, n. 27-28)',
+                        prayer: '«Tenemos un altar del cual no tienen derecho a comer los que sirven al antiguo tabernáculo; por medio de Cristo ofrezcamos siempre a Dios un sacrificio de alabanza.» (Hb 13, 10.15)',
+                        elementsUsed: ['Leccionario de la Dedicación y Evangeliario']
+                    },
+                    {
+                        num: 'III',
+                        part: '3. Oración de Dedicación y Unción del Altar',
+                        title: 'Letanías de los Santos y Deposición de Reliquias bajo el Ara',
+                        image: 'https://images.pexels.com/photos/8674230/pexels-photo-8674230.jpeg?auto=compress&cs=tinysrgb&w=1000',
+                        imageCaption: 'Relicario auténtico de santos mártires para el sepulcro del altar (Foto: Pexels)',
+                        description: 'Se cantan las Letanías de los Santos, incluyendo la invocación de los mártires cuyas reliquias se van a colocar. Terminadas las letanías, el diácono o los presbíteros llevan procesionalmente el cofre con las reliquias acompañado de cirios e incienso. El Obispo deposita el relicario en el sepulcro abierto debajo de la mesa del altar (o en su base), mientras un albañil lo cierra con la lápida y mortero.',
+                        rubric: '«Las reliquias de los mártires o de otros santos han de colocarse siempre debajo del altar, nunca sobre la mesa del altar.» (Preliminares Cap. IV, n. 5)',
+                        prayer: '«Bajo el altar de Dios habéis recibido vuestro descanso, santos de Dios; interceded por nosotros ante el Señor Jesucristo.»',
+                        elementsUsed: ['Reliquias Auténticas de Santos y Mártires', 'Sepulcro del Altar, Lápida, Mortero y Paleta']
+                    },
+                    {
+                        num: 'IV',
+                        part: '3. Oración de Dedicación y Unción del Altar',
+                        title: 'Oración de Dedicación y Unción de las 5 Cruces del Ara con Santo Crisma',
+                        image: 'https://images.pexels.com/photos/10629797/pexels-photo-10629797.jpeg?auto=compress&cs=tinysrgb&w=1000',
+                        imageCaption: 'Unción sagrada de la piedra del altar con el Santo Crisma (Foto: Pexels)',
+                        description: 'El Obispo, de pie y sin mitra, pronuncia con las manos extendidas la solemne Oración de Dedicación del Altar. Concluida la plegaria, se quita la casulla, se ciñe el gremial de lino y derrama el Santo Crisma sobre la cruz central y las cuatro cruces angulares del ara, ungiendo después toda la superficie de piedra natural mientras se canta el Salmo 44 («Dios, tu Dios, te ha ungido con óleo de alegría»).',
+                        rubric: '«El Obispo derrama el Santo Crisma en el centro del altar y en cada uno de sus cuatro ángulos; y es laudable que con él unja toda la mesa del altar.» (Cap. IV, n. 41)',
+                        prayer: '«Sea este altar para nosotros signo de Cristo, de cuyo costado traspasado brotaron el agua y la sangre con que fueron instituidos los sacramentos de la Iglesia.»',
+                        elementsUsed: ['Vaso del Santo Crisma y Gremial de Lino', 'Mesa de Piedra Natural con las 5 Cruces (Mensa)']
+                    },
+                    {
+                        num: 'V',
+                        part: '3. Oración de Dedicación y Unción del Altar',
+                        title: 'Quema de Incienso sobre el Altar, Revestimiento e Iluminación',
+                        image: 'https://images.pexels.com/photos/16484625/pexels-photo-16484625.jpeg?auto=compress&cs=tinysrgb&w=1000',
+                        imageCaption: 'Brasero de incienso humeante y turíbulo sobre el altar (Foto: Pexels)',
+                        description: 'Después de la unción, se coloca sobre el altar un brasero con brasas encendidas (o varios montoncitos de incienso con cera sobre las cinco cruces). El Obispo pone incienso y lo bendice; luego un ministro inciensa el altar en derredor. Terminada la incensación, los ministros secan el Santo Crisma con lienzos, colocan la tela impermeable, extienden el mantel blanco, adornan con flores y el diácono enciende los cirios para la Misa.',
+                        rubric: '«Sobre el altar se coloca un brasero para quemar incienso o aromas. Después los ministros limpian la mesa, la cubren con el mantel y se encienden las velas del altar.» (Cap. IV, n. 43-47)',
+                        prayer: '«Suba nuestra oración, Señor, como el incienso en tu presencia; y así como esta casa se llena de suave olor, así tu Iglesia exhale el buen olor de Cristo.»',
+                        elementsUsed: ['Brasero de Incienso, Turíbulos y Navetas', 'Lienzos Purificadores, Tela Encerada (Chrismale) y Mantel Blanco', 'Cirio de la Iluminación y Candelabros del Altar']
+                    },
+                    {
+                        num: 'VI',
+                        part: '4. Liturgia Eucarística',
+                        title: 'Celebración del Santo Sacrificio sobre el Nuevo Altar Consagrado',
+                        image: 'https://images.pexels.com/photos/35025590/pexels-photo-35025590.jpeg?auto=compress&cs=tinysrgb&w=1000',
+                        imageCaption: 'Altar revestido e iluminado para el primer Santo Sacrificio (Foto: Pexels)',
+                        description: 'Los fieles presentan el pan, el vino y el agua. El Obispo sube al altar recién consagrado, lo besa por primera vez ya revestido y celebra la Liturgia Eucarística con el Prefacio propio de la Dedicación del Altar («Verdaderamente es justo y necesario...»). Con la celebración del Sacrificio Eucarístico se alcanza el fin supremo para el cual fue erigido y ungido el altar.',
+                        rubric: '«La celebración de la Eucaristía es la parte principal y más antigua de todo el rito, pues la dedicación de un altar se realiza ante todo con el sacrificio eucarístico.»',
+                        prayer: '«Al acercarnos con alegría a este altar recién dedicado a ti, te pedimos, Señor, que aceptes benignamente los dones de tu Iglesia.»',
+                        elementsUsed: ['Cáliz, Patena y Píxide', 'Corporal, Purificador y Manutergio']
                     }
                 ]
             },
@@ -1753,6 +1832,71 @@
                     'Estado: Altar preparado para el Culto Eucarístico fuera de la Misa',
                     'Selecciona el paso 1 a la izquierda («Preparación: Mantel, Corporal y 6 Velas») para iniciar la Exposición y Bendición con el Santísimo.'
                 );
+            }
+        }
+
+        function renderCeremonieroChecklist() {
+            const container = document.getElementById('ceremoniero-checklist');
+            if (!container) return;
+            container.innerHTML = CHECKLIST_ITEMS.map(item => `
+                <label class="flex items-start gap-3 p-3.5 rounded-xl bg-stone-900/90 hover:bg-stone-800/90 border border-gold-500/20 cursor-pointer transition">
+                    <input type="checkbox" id="${item.id}" class="mt-1 w-4 h-4 accent-amber-500 rounded cursor-pointer">
+                    <div class="text-xs">
+                        <div class="font-cinzel font-bold text-gold-300">${item.category}</div>
+                        <div class="text-stone-300 mt-0.5 leading-relaxed">${item.text}</div>
+                    </div>
+                </label>
+            `).join('');
+        }
+
+        function copyChecklistSummary() {
+            const textLines = CHECKLIST_ITEMS.map(item => {
+                const checked = document.getElementById(item.id)?.checked ? '[✓]' : '[ ]';
+                return `${checked} ${item.category}: ${item.text}`;
+            });
+            const fullText = "CHECKLIST LITÚRGICO - DEDICACIÓN DE IGLESIAS, ALTARES Y CULTO EUCARÍSTICO\n\n" + textLines.join('\n');
+
+            const tempArea = document.createElement('textarea');
+            tempArea.value = fullText;
+            document.body.appendChild(tempArea);
+            tempArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempArea);
+
+            showToast('Lista de preparativos copiada al portapapeles.');
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast-notification');
+            const msgEl = document.getElementById('toast-message');
+            if (!toast || !msgEl) return;
+            msgEl.textContent = message;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3200);
+        }
+
+        function playLiturgicalBell(freq = 528) {
+            try {
+                const AudioCtx = window.AudioContext || window.webkitAudioContext;
+                const ctx = new AudioCtx();
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(freq, ctx.currentTime);
+
+                gain.gain.setValueAtTime(0.18, ctx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 1.8);
+
+                osc.connect(gain);
+                gain.connect(ctx.destination);
+
+                osc.start();
+                osc.stop(ctx.currentTime + 1.8);
+            } catch (err) {
+                // Silent fallback if browser blocks WebAudio before interaction
             }
         }
 
